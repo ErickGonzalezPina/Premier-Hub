@@ -1,3 +1,9 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
 /* Navigation Bar Styles */
 nav {
     background: linear-gradient(90deg, #05537a 0%, #6fa7dc 100%);
@@ -11,7 +17,7 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-right: 12vw;
+    margin-right: 8vw;
     text-decoration: none;
 }
 
@@ -28,6 +34,7 @@ nav {
     font-size: 1.3em;
     font-weight: 700;
     color: #ffffff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.12);
     margin-top: 15px;
     letter-spacing: 1px;
     text-align: center;
@@ -63,4 +70,76 @@ nav a {
 
 nav a:hover {
     color:   #6fa7dc;
+}
+
+
+/* content section styles */
+.container {
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.landing_page_content {
+    background: linear-gradient(135deg, #05537a 0%, #6fa7dc 100%);
+    min-height: calc(100vh - 120px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px 0;
+}
+
+.landing_page_content h1 {
+    color: #fff;
+    font-size: 2.8em;
+    margin-bottom: 0px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+.landing_page_content p {
+    color: #eaf6ff;
+    font-size: 1.3em;
+    margin-bottom: 32px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.landing_page_content .content-logo {
+    width: 15%;
+    height: 15%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing_page_content .content-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.landing_page_content a {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    text-decoration: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.landing_page_content a:hover {
+    background-color: #0056b3;
 }

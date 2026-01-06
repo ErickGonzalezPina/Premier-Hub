@@ -1,0 +1,66 @@
+/* Navigation Bar Styles */
+nav {
+    background: linear-gradient(90deg, #05537a 0%, #6fa7dc 100%);
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo_section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 12vw;
+    text-decoration: none;
+}
+
+.nav-logo {
+    height: 80px;
+    width: 80px;
+    background: transparent;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.logo-text {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    flex: 1;
+}
+
+nav li {
+    margin: 0 100px;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.6em;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+nav a:hover {
+    color:   #6fa7dc;
+}

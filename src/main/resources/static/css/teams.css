@@ -35,7 +35,7 @@
     box-shadow: 0 4px 16px rgba(0,0,0,0.15);
 }
 
-/* Styles for team containers */
+/* Team containers styles*/
 .teams_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -65,4 +65,9 @@
 .team_logo_img:hover {
     transition: 0.5s;
     transform: scale(1.1);
+}
+
+/* Players Container Styles*/
+.players_container {
+    background-color : white;
 }

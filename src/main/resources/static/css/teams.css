@@ -1,3 +1,4 @@
+/* Teams Page Styles */
 .teams_page_content {
     background: linear-gradient(135deg, #05537a 0%, #6fa7dc 100%);
     min-height: calc(100vh - 120px);
@@ -69,5 +70,70 @@
 
 /* Players Container Styles*/
 .players_container {
-    background-color : white;
+    padding: 32px 0 32px 0;
+    min-height: 60vh;
+    width: 100vw;
+    display: none;
+    justify-content: center;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.players_table {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 1.05em;
+    table-layout: auto;
+}
+.players_table thead {
+    background: #05537a;
+}
+.players_table th, .players_table td {
+    padding: 14px 10px;
+    text-align: left;
+}
+.players_table th {
+    color: #fff;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid #6fa7dc;
+}
+.players_table td {
+    color: #222;
+    border-bottom: 1px solid #e3e9f1;
+    background: none;
+    transition: background 0.2s;
+}
+.players_table tr:hover td {
+    background: #eaf3fa;
+}
+.no_players {
+    color: #888;
+    font-size: 1.1em;
+    text-align: center;
+    width: 100%;
+    margin-top: 40px;
+}
+/* Responsive Table Container */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.players_table {
+    min-width: 700px;
+}
+
+@media (max-width: 600px) {
+    .players_table th, .players_table td {
+        padding: 8px 4px;
+        font-size: 0.95em;
+    }
 }

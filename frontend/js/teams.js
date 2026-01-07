@@ -1,4 +1,5 @@
-function loadTeams() {
+
+async function loadTeams() {
     var teamsContainer = document.getElementById('teams_container');
     teamsContainer.innerHTML = '';
 
@@ -38,5 +39,22 @@ function loadTeams() {
         teamsContainer.appendChild(teamDiv);
     });
 }
+// loadTeams();
 
-loadTeams();
+async function loadTeamsFromAPI() {
+    var teamsContainer = document.getElementById('teams_container');
+    teamsContainer.innerHTML = '';
+
+    try {
+        const response = await fetch('/api/v1/player/teams');
+        if (!response.ok) {
+            throw new Error("Network response was not ok");
+        }
+        const teamNames = await response.json();
+        console.log(teamNames);
+
+    } catch (error) {
+        console.error("Error fetching teams:", error);
+    }
+}
+loadTeamsFromAPI();

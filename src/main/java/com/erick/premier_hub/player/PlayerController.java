@@ -38,6 +38,10 @@ public class PlayerController {
             return playerService.getPlayers();
         }
     }
+    @GetMapping("/teams")
+    public List<String> getAllTeams() {
+        return playerService.getAllTeams();
+    }
     @PostMapping
     public ResponseEntity<Player> addPlayer(@RequestBody Player player){
         Player createdPlayer = playerService.addPlayer(player);

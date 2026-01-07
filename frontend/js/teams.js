@@ -1,6 +1,3 @@
-
-
-
 function loadTeams() {
     var teamsContainer = document.getElementById('teams_container');
     teamsContainer.innerHTML = '';

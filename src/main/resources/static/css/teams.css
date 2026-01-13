@@ -55,7 +55,7 @@
     align-items: center;
 }
 
-.team_logo_img {
+.team_flag_img {
     width: 150px;
     height: 150px;
     object-fit: contain;
@@ -63,7 +63,7 @@
     border-radius: 8px;
     background: transparent;
 }
-.team_logo_img:hover {
+.team_flag_img:hover {
     transition: 0.5s;
     transform: scale(1.1);
 }

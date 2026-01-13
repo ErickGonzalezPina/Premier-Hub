@@ -18,13 +18,13 @@ async function loadTeams() {
             const teamDiv = document.createElement("div");
             teamDiv.className = "team_card";
 
-            const teamLogo = document.createElement("img");
-            teamLogo.src = "assets/teams/" + team + ".png";
-            teamLogo.alt = team + " Logo";
-            teamLogo.className = "team_logo_img";
-            teamLogo.addEventListener("click", () => loadTeamPlayers(team));
+            const teamFlag = document.createElement("img");
+            teamFlag.src = "assets/teams/" + team + ".png";
+            teamFlag.alt = team + " flag";
+            teamFlag.className = "team_flag_img";
+            teamFlag.addEventListener("click", () => loadTeamPlayers(team));
 
-            teamDiv.appendChild(teamLogo);
+            teamDiv.appendChild(teamFlag);
             teamsContainer.appendChild(teamDiv);
         });
     }

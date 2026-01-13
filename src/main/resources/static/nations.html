@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teams - Premier Hub</title>
+    <link rel="stylesheet" href="css/nations.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- link to Font Awesome CDN icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<nav>
+    <div class="logo_section">
+        <img src="assets/pageLogo.ico" alt="Premier Hub Logo" class="nav-logo">
+        <p class="logo-text">Premier Hub</p>
+    </div>
+
+    <div class="links_section">
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+            <li><a href="teams.html"><i class="fas fa-users"></i></a></li>
+            <li><a href="nations.html"><i class="fa-solid fa-flag"></i></a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="nations_page_content">
+    <h1>Search players from each nation</h1>
+
+    <div class="nations_container" id="nations_container">
+        <!-- nations will be dynamically loaded here -->
+    </div>
+
+    <div class="players_container" id="players_container" style="display:none">
+        <!-- players will be dynamically loaded here -->
+    </div>
+</section>
+
+<script src="js/nations.js" defer></script>
+</body>
+</html>

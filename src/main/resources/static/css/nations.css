@@ -1,0 +1,51 @@
+.nations_page_content {
+    background: linear-gradient(135deg, #05537a 0%, #6fa7dc 100%);
+    min-height: calc(100vh - 120px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px 0 60px 0;
+}
+
+.nations_page_content h1 {
+    color: #fff;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+
+/* Nation containers styles*/
+.nations_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    width: 90vw;
+    max-width: 1200px;
+    justify-items: center;
+}
+
+.nation_card {
+    width: 200px;
+    padding: 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nation_flag_img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background: transparent;
+}
+.nation_flag_img:hover {
+    transition: 0.5s;
+    transform: scale(1.1);
+}

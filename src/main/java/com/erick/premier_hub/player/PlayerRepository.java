@@ -16,4 +16,7 @@ public interface PlayerRepository extends JpaRepository<Player, String> {
 
     @Query("SELECT DISTINCT p.team FROM Player p")
     List<String> findAllTeams();
+
+    @Query("SELECT DISTINCT p.nation FROM Player p")
+    List<String> findAllNations();
 }

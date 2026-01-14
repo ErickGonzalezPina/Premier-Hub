@@ -38,8 +38,8 @@
 }
 
 .nation_flag_img {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
     object-fit: contain;
     margin-bottom: 10px;
     border-radius: 8px;

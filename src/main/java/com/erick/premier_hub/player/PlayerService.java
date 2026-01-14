@@ -72,6 +72,9 @@ public class PlayerService {
     public List<String> getAllTeams() {
         return playerRepository.findAllTeams();
     }
+    public List<String> getAllNations() {
+        return playerRepository.findAllNations();
+    }
 
     @Transactional
     public void deletePlayer(String playerName) {

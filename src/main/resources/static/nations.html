@@ -12,33 +12,34 @@
 </head>
 
 <body>
-<nav>
-    <div class="logo_section">
-        <img src="assets/pageLogo.ico" alt="Premier Hub Logo" class="nav-logo">
-        <p class="logo-text">Premier Hub</p>
-    </div>
+    <nav>
+        <div class="logo_section">
+            <img src="assets/pageLogo.ico" alt="Premier Hub Logo" class="nav-logo">
+            <p class="logo-text">Premier Hub</p>
+        </div>
 
-    <div class="links_section">
-        <ul>
-            <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-            <li><a href="teams.html"><i class="fas fa-users"></i></a></li>
-            <li><a href="nations.html"><i class="fa-solid fa-flag"></i></a></li>
-        </ul>
-    </div>
-</nav>
+        <div class="links_section">
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i></a></li>
+                <li><a href="teams.html"><i class="fas fa-users"></i></a></li>
+                <li><a href="nations.html"><i class="fa-solid fa-flag"></i></a></li>
+            </ul>
+        </div>
+    </nav>
 
-<section class="nations_page_content">
-    <h1>Search players from each nation</h1>
+    <section class="nations_page_content">
+        <h1>Search players from each nation</h1>
 
-    <div class="nations_container" id="nations_container">
-        <!-- nations will be dynamically loaded here -->
-    </div>
+        <div class="nations_container" id="nations_container">
+            <!-- nations will be dynamically loaded here -->
+        </div>
 
-    <div class="players_container" id="players_container" style="display:none">
-        <!-- players will be dynamically loaded here -->
-    </div>
-</section>
+        <div class="players_container" id="players_container" style="display:none">
+            <!-- players will be dynamically loaded here -->
+        </div>
+    </section>
 
-<script src="js/nations.js" defer></script>
+    <!-- Use <script type="module"> for ES6 imports/exports; modules are always deferred. -->
+    <script type="module" src="js/nations.js"></script>
 </body>
 </html>

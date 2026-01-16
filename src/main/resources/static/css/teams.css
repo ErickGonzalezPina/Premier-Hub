@@ -15,7 +15,6 @@
     background: #f7f7f9;
     color: #37003c;
 }
-
 #teamSearch:focus {
     box-shadow: 0 4px 16px rgba(255,26,140,0.15);
     border-color: #ff1a8c;

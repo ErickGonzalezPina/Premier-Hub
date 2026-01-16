@@ -102,7 +102,7 @@ nav a:hover {
 }
 
 .landing_page_content {
-    background: linear-gradient(135deg, #ede0f7 0%, #d1b3e0 100%);
+    background: linear-gradient(135deg, #b492ce 0%, #9f3fd0 100%);
     min-height: calc(100vh - 120px);
     width: 100%;
     display: flex;
@@ -123,7 +123,7 @@ nav a:hover {
 }
 
 .landing_page_content p {
-    color: #0057b8;
+    color: whitesmoke;
     font-size: 1.3em;
     margin-bottom: 32px;
     font-family: 'Montserrat', Arial, sans-serif;
@@ -148,7 +148,7 @@ nav a:hover {
 
 .landing_page_content a {
     background-color: #37003c;
-    color: #fff;
+    color: whitesmoke;
     border: none;
     padding: 15px 30px;
     font-size: 1.2em;
@@ -164,7 +164,7 @@ nav a:hover {
 
 /* Page Content Styles */
 .page_content {
-        background: linear-gradient(135deg, #ede0f7 0%, #d1b3e0 100%);
+    background: linear-gradient(135deg, #b492ce 0%, #9f3fd0 100%);
     min-height: calc(100vh - 120px);
     width: 100vw;
     display: flex;
@@ -219,13 +219,13 @@ nav a:hover {
     color: #fff;
     font-weight: 700;
     letter-spacing: 0.5px;
-    border-bottom: 2px solid #ff1a8c;
+    border-bottom: 2px solid  #ff1a8c;
 }
 .players_table td {
     color: #232946;
     border-bottom: 1px solid #e5e5e5;
     background: none;
-    transition: background 0.2s;
+    transition: 0.2s;
 }
 .players_table tr:hover td {
     background: #e5e5e5;

@@ -1,0 +1,1 @@
+import renderPlayersTable from './helpers/playersTable.js';

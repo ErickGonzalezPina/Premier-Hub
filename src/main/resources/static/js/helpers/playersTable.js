@@ -1,4 +1,4 @@
-export default renderPlayersTable
+export default renderPlayersTable;
 
 
 function renderPlayersTable(players, container) {

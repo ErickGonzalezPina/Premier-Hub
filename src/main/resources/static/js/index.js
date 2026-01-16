@@ -1,4 +1,3 @@
-import renderPlayersTable from './helpers/playersTable.js';
 import renderNav from "./helpers/navContent.js";
 
 

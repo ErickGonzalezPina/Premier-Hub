@@ -1,4 +1,6 @@
 import renderPlayersTable from "./helpers/playersTable.js";
+import renderNav from "./helpers/navContent.js";
+
 
 async function loadTeams() {
     /**
@@ -33,6 +35,12 @@ async function loadTeams() {
     }
 }
 loadTeams();
+
+function loadNavbar() {
+    const navbar = document.getElementById("navbar");
+    renderNav(navbar);
+}
+loadNavbar();
 
 
 async function loadTeamPlayers(team) {

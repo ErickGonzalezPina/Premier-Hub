@@ -17,7 +17,7 @@ async function loadPositions() {
     positions.forEach(function (position) {
         const positionDiv = document.createElement('div');
         positionDiv.className = "position_card";
-        positionDiv.addEventListener("click", () => loadPositionPlayers(position.pos));
+        positionDiv.addEventListener("click", () => loadPositionPlayers(position.pos, position.name));
 
         const img = document.createElement('img');
         img.src = position.img;
@@ -41,7 +41,7 @@ async function loadNavbar() {
 }
 loadNavbar();
 
-async function loadPositionPlayers(position) {
+async function loadPositionPlayers(position, name) {
     /**
      * Fetches and displays all players for the given team.
      * Hides the teams container, displays the players container, and populates it
@@ -53,6 +53,10 @@ async function loadPositionPlayers(position) {
     positionsContainer.style.display = "none";
     playersContainer.innerHTML = "";
     playersContainer.style.display = "block";
+
+    // Replace the h1 title with the position name
+    const positionHeading = document.getElementById("pos_heading");
+    positionHeading.innerText = name;
 
     try {
         const response = await fetch(`/api/v1/player?position=${encodeURIComponent(position)}`);

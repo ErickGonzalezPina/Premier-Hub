@@ -40,7 +40,7 @@ async function loadNations() {
 loadNations()
 
 
-function loadNavbar() {
+async function loadNavbar() {
     const navbar = document.getElementById("navbar");
     renderNav(navbar);
 }

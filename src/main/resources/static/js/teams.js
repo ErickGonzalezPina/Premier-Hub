@@ -36,7 +36,7 @@ async function loadTeams() {
 }
 loadTeams();
 
-function loadNavbar() {
+async function loadNavbar() {
     const navbar = document.getElementById("navbar");
     renderNav(navbar);
 }

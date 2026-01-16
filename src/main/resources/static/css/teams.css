@@ -5,17 +5,20 @@
     width: 40%;
     padding: 12px 18px;
     border-radius: 8px;
-    border: none;
+    border: 2px solid #37003c;
     font-size: 1.1em;
     margin-bottom: 40px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 8px rgba(55,0,60,0.08);
     outline: none;
     font-family: 'Montserrat', Arial, sans-serif;
-    transition: box-shadow 0.2s;
+    transition: box-shadow 0.2s, border-color 0.2s;
+    background: #f7f7f9;
+    color: #37003c;
 }
 
 #teamSearch:focus {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 16px rgba(255,26,140,0.15);
+    border-color: #ff1a8c;
 }
 
 
@@ -23,6 +26,7 @@
 .teams_container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    background: transparent;
     gap: 32px;
     width: 90vw;
     max-width: 1200px;
@@ -36,6 +40,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background: transparent;
 }
 
 .team_flag_img {
@@ -45,8 +50,8 @@
     margin-bottom: 10px;
     border-radius: 8px;
     background: transparent;
+    transition: 0.5s;
 }
 .team_flag_img:hover {
-    transition: 0.5s;
     transform: scale(1.1);
 }

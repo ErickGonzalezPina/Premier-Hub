@@ -1,16 +1,18 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background: transparent;
+    min-height: 100vh;
 }
 
 /* Navigation Bar Styles */
 nav {
-    background: linear-gradient(90deg, #05537a 0%, #6fa7dc 100%);
+    background: #37003c;
     padding: 18px 32px;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    box-shadow: 0 2px 12px rgba(55,0,60,0.08);
 }
 
 .logo_section {
@@ -27,16 +29,17 @@ nav {
     background: transparent;
     margin-left: 40px;
     margin-right: 12px;
+    box-shadow: 0 2px 8px rgba(55,0,60,0.10);
 }
 
 .logo-text {
     font-family: 'Montserrat', Arial, sans-serif;
-    font-size: 1.3em;
-    font-weight: 700;
-    color: #ffffff;
-    text-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #fff;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.18);
     margin-top: 15px;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     text-align: center;
 }
 
@@ -86,9 +89,9 @@ nav a {
     justify-content: center;
     height: 100%;
 }
-
 nav a:hover {
-    color:   #6fa7dc;
+    color: #9539db;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 
@@ -99,7 +102,7 @@ nav a:hover {
 }
 
 .landing_page_content {
-    background: linear-gradient(135deg, #05537a 0%, #6fa7dc 100%);
+    background: linear-gradient(135deg, #ede0f7 0%, #d1b3e0 100%);
     min-height: calc(100vh - 120px);
     width: 100%;
     display: flex;
@@ -111,7 +114,7 @@ nav a:hover {
 }
 
 .landing_page_content h1 {
-    color: #fff;
+    color: #37003c;
     font-size: 2.8em;
     margin-bottom: 0px;
     font-family: 'Montserrat', Arial, sans-serif;
@@ -120,7 +123,7 @@ nav a:hover {
 }
 
 .landing_page_content p {
-    color: #eaf6ff;
+    color: #0057b8;
     font-size: 1.3em;
     margin-bottom: 32px;
     font-family: 'Montserrat', Arial, sans-serif;
@@ -144,8 +147,8 @@ nav a:hover {
 }
 
 .landing_page_content a {
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: #37003c;
+    color: #fff;
     border: none;
     padding: 15px 30px;
     font-size: 1.2em;
@@ -159,13 +162,9 @@ nav a:hover {
     display: inline-block;
 }
 
-.landing_page_content a:hover {
-    background-color: #0056b3;
-}
-
 /* Page Content Styles */
 .page_content {
-    background: linear-gradient(135deg, #05537a 0%, #6fa7dc 100%);
+        background: linear-gradient(135deg, #ede0f7 0%, #d1b3e0 100%);
     min-height: calc(100vh - 120px);
     width: 100vw;
     display: flex;
@@ -176,7 +175,7 @@ nav a:hover {
 }
 
 .page_content h1 {
-    color: #fff;
+    color: #37003c;
     font-size: 2.5em;
     margin-bottom: 30px;
     font-family: 'Montserrat', Arial, sans-serif;
@@ -201,16 +200,16 @@ nav a:hover {
     max-width: 1200px;
     margin: 0 auto;
     border-collapse: collapse;
-    background: #fff;
+    background: #f7f7f9;
     border-radius: 12px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 12px rgba(229,229,229,0.18);
     overflow: hidden;
     font-family: 'Montserrat', Arial, sans-serif;
     font-size: 1.05em;
     table-layout: auto;
 }
 .players_table thead {
-    background: #05537a;
+    background: #37003c;
 }
 .players_table th, .players_table td {
     padding: 14px 10px;
@@ -220,16 +219,16 @@ nav a:hover {
     color: #fff;
     font-weight: 700;
     letter-spacing: 0.5px;
-    border-bottom: 2px solid #6fa7dc;
+    border-bottom: 2px solid #ff1a8c;
 }
 .players_table td {
-    color: #222;
-    border-bottom: 1px solid #e3e9f1;
+    color: #232946;
+    border-bottom: 1px solid #e5e5e5;
     background: none;
     transition: background 0.2s;
 }
 .players_table tr:hover td {
-    background: #eaf3fa;
+    background: #e5e5e5;
 }
 .no_players {
     color: #888;

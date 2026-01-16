@@ -20,14 +20,14 @@
 }
 
 .nation_flag_img {
-    width: 180px;
-    height: 180px;
+    width: 220px;
+    height: 220px;
     object-fit: contain;
     margin-bottom: 10px;
     border-radius: 8px;
     background: transparent;
+    transition: 0.5s;
 }
 .nation_flag_img:hover {
-    transition: 0.5s;
     transform: scale(1.1);
 }

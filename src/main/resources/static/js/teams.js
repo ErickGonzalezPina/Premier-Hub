@@ -36,6 +36,35 @@ async function loadTeams() {
 }
 loadTeams();
 
+
+async function teamSearchBar() {
+    /**
+     * Fetches user input from search bar.
+     * Converts it to the correct format
+     * Calls loadTeamPlayer with the given team
+     */
+    const searchBar = document.getElementById("teamSearch");
+
+    searchBar.addEventListener("change", function() {
+        const userInput = searchBar.value;
+
+        // Split the user input by spaces
+        const words = userInput.split(" ");
+
+        // Make the first letter of each word capitalized
+        for (let i = 0; i < words.length; i++) {
+            words[i] = words[i].charAt(0).toUpperCase() +
+                words[i].slice(1).toLowerCase();
+        }
+        // Replace spaces with "-"
+        const formattedInput = words.join("-");
+            
+        loadTeamPlayers(formattedInput);
+        });
+}
+teamSearchBar();
+
+
 async function loadNavbar() {
     const navbar = document.getElementById("navbar");
     renderNav(navbar);
@@ -60,6 +89,11 @@ async function loadTeamPlayers(team) {
         const response = await fetch(`/api/v1/player?team=${encodeURIComponent(team)}`);
         if (!response.ok) {console.log("Network response was not ok while fetching players for team");}
         const players = await response.json();
+
+        if (players.length === 0) {
+            alert("Invalid team name. Please try again.");
+            return;
+        }
 
         // Render players table
         renderPlayersTable(players, playersContainer);

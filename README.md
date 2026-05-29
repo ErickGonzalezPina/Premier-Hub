@@ -13,7 +13,7 @@ A modern web application for exploring Premier League football stats, built with
 ## Technologies Used
 - **Backend:** Java, Spring Boot, Spring Data JPA, REST API
 - **Frontend:** HTML5, CSS3, JavaScript (ES6 modules)
-- **Database:** (Your DB here, e.g., PostgreSQL/MySQL)
+- **Database:** PostgreSQL
 
 ## Getting Started
 1. **Clone the repository:**
